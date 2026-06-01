@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Barbell Bar -->
+    <path
+        android:fillColor="#CCFF00"
+        android:pathData="M24,51h60v6H24z" />
+    
+    <!-- Center Grip sleeve -->
+    <path
+        android:fillColor="#1AD1D7"
+        android:pathData="M44,49h20v10H44z" />
+
+    <!-- Left Plate Inner -->
+    <path
+        android:fillColor="#CCFF00"
+        android:pathData="M18,34h5v40h-5z" />
+
+    <!-- Left Plate Outer -->
+    <path
+        android:fillColor="#1AD1D7"
+        android:pathData="M10,40h6v28h-6z" />
+
+    <!-- Right Plate Inner -->
+    <path
+        android:fillColor="#CCFF00"
+        android:pathData="M85,34h5v40h-5z" />
+
+    <!-- Right Plate Outer -->
+    <path
+        android:fillColor="#1AD1D7"
+        android:pathData="M92,40h6v28h-6z" />
+</vector>
