@@ -1,12 +1,10 @@
-# 🏋️ Fitness Coach - AI Powered Fitness & Wellness Platform
-
-![Fitness Coach Banner](assets/banner.png)
+# 🏋️ Fitness Coach - AI Powered Fitness & Wellness App
 
 ## 📖 Overview
 
-Fitness Coach is a modern AI-powered fitness application designed to help users improve their health, build strength, lose weight, and maintain an active lifestyle. The platform provides personalized workout plans, nutrition guidance, progress tracking, and intelligent fitness recommendations.
+Fitness Coach is a modern Android fitness application built with **Kotlin** and **Jetpack Compose**. The app helps users achieve their fitness goals through personalized workout plans, nutrition tracking, progress analytics, and AI-powered coaching.
 
-Whether you're a beginner or an experienced athlete, Fitness Coach adapts to your goals and fitness level.
+Whether your goal is weight loss, muscle gain, strength training, or overall wellness, Fitness Coach provides a complete fitness ecosystem in one app.
 
 ---
 
@@ -16,102 +14,114 @@ Whether you're a beginner or an experienced athlete, Fitness Coach adapts to you
 - Personalized workout recommendations
 - Smart fitness insights
 - Goal-based training plans
-- AI-generated exercise routines
+- AI-generated workout routines
+- Daily motivation and fitness tips
 
 ### 🏋️ Workout Management
 - Home workouts
-- Gym workout plans
-- Strength training programs
+- Gym workout programs
+- Strength training
 - Cardio exercises
-- Flexibility and mobility routines
+- HIIT workouts
+- Stretching and mobility exercises
 
-### 🍎 Nutrition Tracking
-- Daily calorie calculator
-- Meal planning
+### 🍎 Nutrition & Diet
+- Calorie tracking
 - Macro nutrient tracking
-- Healthy diet suggestions
+- Meal planner
+- Water intake tracker
+- Healthy recipe suggestions
 
 ### 📊 Progress Tracking
 - Weight tracking
 - BMI calculator
 - Body measurements
 - Workout history
-- Performance analytics
+- Progress charts and analytics
 
-### 📅 Smart Scheduling
+### 📅 Smart Planner
 - Workout calendar
+- Goal management
 - Daily reminders
-- Goal tracking
-- Habit monitoring
+- Habit tracking
 
 ### 🔐 Authentication
-- Secure login & registration
+- Email Login
 - Google Sign-In
-- User profile management
+- Secure Authentication
+- User Profiles
 
 ### 🎨 Modern UI/UX
-- Dark & Light mode
-- Responsive design
-- Smooth animations
-- Clean dashboard
+- Material Design 3
+- Dark & Light Mode
+- Smooth Animations
+- Responsive Layouts
 
 ---
 
-## 🚀 Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
-- Flutter
-- Dart
+- Kotlin
+- Jetpack Compose
 - Material Design 3
 
+### Architecture
+- MVVM Architecture
+- Clean Architecture
+- Repository Pattern
+
 ### Backend
-- PHP / Node.js
+- Firebase
 - REST API
-- MySQL
+- MySQL (Optional)
 
-### AI Integration
-- OpenAI API
-- Workout Recommendation Engine
+### Database
+- Room Database
+- Firebase Firestore
+
+### Dependency Injection
+- Hilt
+
+### Networking
+- Retrofit
+- OkHttp
+
+### Asynchronous Programming
+- Kotlin Coroutines
+- Flow
+
+### Analytics
+- Firebase Analytics
+- Crashlytics
+
+### AI Features
+- OpenAI API Integration
+- Personalized Recommendations
 - Nutrition Analysis
-
-### Tools
-- Firebase Authentication
-- Firebase Notifications
-- Git & GitHub
-
----
-
-## 📱 Screenshots
-
-| Home | Workout | Progress |
-|--------|---------|-----------|
-| Screenshot | Screenshot | Screenshot |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-fitness-coach/
-├── lib/
+app/
+├── data/
+│   ├── local/
+│   ├── remote/
+│   ├── repository/
+│   └── model/
+│
+├── domain/
+│   ├── usecase/
+│   └── repository/
+│
+├── presentation/
 │   ├── screens/
-│   ├── widgets/
-│   ├── models/
-│   ├── services/
-│   ├── providers/
-│   ├── utils/
-│   └── main.dart
+│   ├── components/
+│   ├── navigation/
+│   └── viewmodel/
 │
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── animations/
-│
-├── backend/
-│   ├── api/
-│   ├── database/
-│   └── config/
-│
-├── docs/
-├── test/
-└── README.md
+├── di/
+├── utils/
+└── MainActivity.kt
